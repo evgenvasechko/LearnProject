@@ -1,0 +1,69 @@
+.hello-section {
+    background: url(../images/bg_hello-section.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 2rem;
+
+    &:before {
+        content: "";
+        position: absolute;
+        background-color: rgba(255, 255, 255, .9);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        }
+
+    &__subheader {
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #818181;
+        padding: 16rem 0 1.6rem 0;
+        }
+    &__header {
+        font-weight: 900;
+        font-size: 5.6rem;
+        color: #333333;
+        }
+    &__button {
+        margin: 7rem auto;
+        }
+    &__play-button {
+        width: 102px;
+        height 102px;
+        }
+    &__text {
+        color: rgba(81, 81, 81, .5);
+        margin-bottom: 4rem;
+        font-weight: 300;
+        }
+    &__ico_gray {
+        border: solid 3px rgba(15, 15, 15, 0.1);
+        border-radius: 50px;
+        margin: 0 auto;
+        height: 30px;
+        width: 20px;
+        display: block;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 5px;
+            background-color: rgba(15, 15, 15, 0.1);
+            border-radius: 50%;
+            right: 49.85%;
+            margin-top: 3px;
+            }
+        }
+    @media screen and (max-width: 767px) {
+        &__header {
+            font-size: 4.2rem
+            }
+        &__button {
+            margin: 3rem auto
+            }
+        }
+    }

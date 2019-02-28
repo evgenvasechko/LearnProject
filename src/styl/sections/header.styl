@@ -1,0 +1,86 @@
+.header {
+    position: absolute;
+    max-width: 1138px;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    margin: 0 auto;
+    display: flex;
+    padding: 3rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    z-index: 2;
+
+    &-logo {
+        flex: 50;
+        @media screen and (max-width: 767px) {
+            flex: 1
+        }
+        img {
+            width: 2rem;
+            height auto;
+        }
+    }
+    &-lang {
+        flex: 6;
+        letter-spacing: 1px;
+        @media screen and (max-width: 767px) {
+            flex: 1
+        }
+    }
+
+    &__menu {
+        opacity: 0
+        visibility: hidden
+        position: absolute
+        top: 10rem
+        right: 0
+        width: 100%
+        background: rgba(0, 0, 0, .1)
+        border-radius: 0 0 3px 3px
+        transition: opacity .5s linear
+        @media screen and (max-width: 767px) {
+            background: rgba(255, 255, 255, 1)
+        }
+    }
+
+    &-menu {
+        &__icon {
+            flex: 1;
+            color: #333333;
+            position: relative;
+            margin-left: 2px;
+            width: 21px;
+            height: 2px;
+            background-color: currentColor;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -5px;
+                left: 0;
+                width: 21px;
+                height: 2px;
+                background-color: currentColor;
+                }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 0;
+                width: 21px;
+                height: 2px;
+                background-color: currentColor;
+                }
+            }
+        &__item {
+            flex: 1
+            min-width: 10rem
+            padding: 1rem 0
+            text-align: center
+        }
+    }
+}

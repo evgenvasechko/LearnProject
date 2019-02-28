@@ -1,0 +1,25 @@
+.advantages-info {
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    align-self: left
+
+    &__unit {
+        max-width: 35rem
+        margin: 6.4rem 0 5rem 0
+    }
+    @media screen and (max-width: 767px) {
+        flex-direction: column
+        &__unit {
+            margin: 2rem 0
+        }
+    }
+}
+
+.advantages-image__img {
+    max-width: 1000px;
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}

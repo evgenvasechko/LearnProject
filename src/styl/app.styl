@@ -1,0 +1,111 @@
+@require 'vendor/normalize.css'
+@require 'base/variables'
+@require 'base/mixins'
+@require 'base/media'
+@require 'base/fonts'
+@require 'base/typo'
+@require 'base/buttons'
+@require 'base/grid'
+@require 'base/form'
+@require 'base/animations'
+
+*,
+*::before,
+*::after
+  box-sizing: border-box    
+  font-family: 'Trueno';
+  margin: 0;
+  padding: 0;
+  color: #333333;
+
+html
+  font-size: 62.5%
+  width: 100%
+  overflow-x: hidden
+
+body
+  /* code your own styles here */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+a
+  cursor: pointer
+
+h2
+  font-size: 4.4rem
+  @media screen and (max-width: 767px) {
+    font-size: 3.2rem
+  }
+
+.content {
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1138px;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    margin: 0 1rem
+  }
+}
+
+.text {
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+
+.menu
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap
+  &__item
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    a 
+      color: #8E66EE;
+  @media screen and (max-width: 767px) {
+    flex-direction: column
+  }
+
+.unit {
+  &__header {
+    font-size: 1.6rem
+    font-weight: 500
+    margin-bottom: 1.6rem  
+  }
+  &__text {
+    font-size: 1.6rem
+    font-weight: 300
+    color: #818181
+    line-height: 1.5
+    }
+}
+
+.subheader {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  }
+
+
+
+@import 'sections/header'
+@import 'sections/hello-section'
+@import 'sections/save-time'
+@import 'sections/advantages'
+@import 'sections/section-build-for'
+@import 'sections/section-gallery'
+@import 'sections/section-testimonials'
+@import 'sections/section-map'
+@import 'sections/footer'
+
+
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  }

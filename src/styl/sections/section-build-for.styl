@@ -1,0 +1,32 @@
+.build-for {
+    background: #f7f8ff;
+
+    &__text {
+        border-bottom: solid 3px #f3f3f8;
+        padding: 10rem 0 5rem 0;
+        font-weight: 200;
+        color: #818181;
+        line-height: 1.5;
+    }
+
+    &__collaborative {
+        padding: 5rem 0 9rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    &-collaborative__text {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #818181;
+        line-height: 1.5;
+    }
+    @media screen and (max-width: 767px) {
+        &__collaborative {
+            flex-direction: column
+        }
+        &-collaborative__unit {
+            margin: 2rem 0 0 0
+        }
+    }
+}

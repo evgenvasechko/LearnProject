@@ -1,0 +1,30 @@
+.gallery {
+    text-align: center;
+    &__header {
+        color: #333333;
+        font-weight: 600;
+        line-height: 2;
+        margin-top: 9rem;
+    }
+    &__text {
+        font-weight: 200;
+        color: #818181;
+        line-height: 1.5;
+        max-width: 700px;
+        margin: 0 auto 5.7rem auto;
+    }
+    &__images {
+        margin-bottom: 10rem;
+
+        img {
+            height: 250px;
+            width: auto;
+            margin: 0.5rem;
+            @media screen and (max-width: 767px) {
+                width: 95%
+                height: auto
+                margin: 0 auto
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+include /includes/data
+include /includes/require
+
+block variables
+
+doctype html
+html(lang="en")
+  head
+    include /includes/head
+  body
+    .page
+      .page__header
+        include /sections/header
+      .page__inner
+        main.page__content
+          block content
+            include /sections/hello-section
+            include /sections/save-time
+            include /sections/advantages
+            include /sections/section-build-for
+            include /sections/section-gallery
+            include /sections/section-testimonials
+            include /sections/section-map
+        include /sections/footer
